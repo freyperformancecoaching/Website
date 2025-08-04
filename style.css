@@ -16,8 +16,8 @@ body {
 header {
   background-color: #000;
   color: #fff;
-  text-align: center;
-  padding: 4rem 2rem;
+  /* Remove text-align center here, navbar will handle alignment */
+  padding: 1rem 2rem; /* Reduced padding for navbar */
 }
 
 header h1 {
@@ -98,5 +98,58 @@ footer {
   }
   .btn {
     padding: 0.6rem 1rem;
+  }
+}
+
+/* --- NAVBAR STYLES --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-nav {
+  background-color: #ff5c35;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #e04a1f;
+}
+
+/* Responsive navbar */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-buttons {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+  
+  .btn-nav {
+    flex-grow: 1;
+    text-align: center;
   }
 }
