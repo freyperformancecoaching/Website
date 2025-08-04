@@ -58,6 +58,40 @@ header p {
   flex-wrap: wrap;
 }
 
+.shop-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.plan-card {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.plan-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card .coming-soon {
+  color: #ff5c35;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 /* ----------------- BUTTON STYLES ----------------- */
 .btn,
 .btn-nav {
