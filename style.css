@@ -110,7 +110,7 @@ section p {
 .hayden1 {
   display: block;
   margin: 2rem auto;
-  width: 75%;
+  width: 50%;
   height: auto;
   border-radius: 8px; /* optional: adds rounded corners */
 }
