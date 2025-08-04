@@ -13,44 +13,37 @@ body {
 }
 
 /* Header */
-header {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 4rem 2rem;
-
+.header-actions {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* centers horizontally */
-  justify-content: center; /* centers vertically if needed */
+  justify-content: center; /* centers entire group horizontally */
+  align-items: center;     /* vertically aligns button & nav */
+  gap: 1.5rem;             /* space between "Work With Me" and nav buttons */
+  margin-top: 2rem;
+  flex-wrap: wrap;         /* makes it wrap nicely on small screens */
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.nav-buttons {
+  display: flex;
+  gap: 1rem;               /* space between nav buttons */
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #000; /* Black button */
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.btn-nav {
+  /* add your nav button styling or inherit from .btn */
+  background-color: transparent;
   border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
+.btn-nav:hover {
   background-color: #fff;
   color: #000;
 }
+
 
 /* Sections */
 section {
