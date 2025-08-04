@@ -207,14 +207,16 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start; /* ⬅️ This aligns the text to the top */
   gap: 2rem;
   max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 2rem;
+  margin: 2rem auto; /* reduce vertical space */
+  padding: 1rem 2rem;
 }
 
 .about-text {
   flex: 1 1 50%;
+  margin-top: 0; /* Just in case */
 }
 
 .about-images {
