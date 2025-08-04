@@ -78,10 +78,10 @@ header p {
 }
 
 .btn-nav {
-  background-color: #ff5c35;
+  background-color: #000;
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border: none;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #fff;
 }
 
 .btn-nav:hover {
