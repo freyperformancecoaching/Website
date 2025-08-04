@@ -254,6 +254,24 @@ footer {
   }
 }
 
+main {
+  max-width: 900px;   /* limits width so it doesn't stretch too wide */
+  margin: 2rem auto;  /* centers horizontally and adds vertical spacing */
+  padding: 0 1rem;    /* adds a little side padding for small screens */
+  text-align: center; /* centers text inside main */
+}
+
+main article {
+  margin-bottom: 2rem;  /* space between posts */
+}
+
+main article h2 {
+  margin-bottom: 0.5rem;
+}
+
+main article p {
+  margin-bottom: 1rem;
+}
 
 /* ----------------- RESPONSIVE STYLES ----------------- */
 @media (max-width: 600px) {
