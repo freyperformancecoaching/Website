@@ -16,8 +16,13 @@ body {
 header {
   background-color: #000;
   color: #fff;
-  /* Remove text-align center here, navbar will handle alignment */
-  padding: 1rem 2rem; /* Reduced padding for navbar */
+  text-align: center;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically if needed */
 }
 
 header h1 {
