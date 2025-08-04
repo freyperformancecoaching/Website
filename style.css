@@ -94,6 +94,7 @@ section {
   padding: 3rem 2rem;
   max-width: 900px;
   margin: auto;
+  align-items: center;
 }
 
 section h2 {
