@@ -1,4 +1,4 @@
-/* Reset and base */
+/* ----------------- RESET & BASE STYLES ----------------- */
 * {
   margin: 0;
   padding: 0;
@@ -12,40 +12,84 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* ----------------- HEADER ----------------- */
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Action area in header */
 .header-actions {
   display: flex;
-  justify-content: center; /* centers entire group horizontally */
-  align-items: center;     /* vertically aligns button & nav */
-  gap: 1.5rem;             /* space between "Work With Me" and nav buttons */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 2rem;
-  flex-wrap: wrap;         /* makes it wrap nicely on small screens */
+  flex-wrap: wrap;
 }
 
-.nav-buttons {
-  display: flex;
-  gap: 1rem;               /* space between nav buttons */
-}
-
+/* ----------------- BUTTON STYLES ----------------- */
+.btn,
 .btn-nav {
-  /* add your nav button styling or inherit from .btn */
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-nav:hover {
+/* Main CTA Button */
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #fff;
+}
+
+.btn:hover {
   background-color: #fff;
   color: #000;
 }
 
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
 
-/* Sections */
+.btn-nav {
+  background-color: #ff5c35;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+}
+
+.btn-nav:hover {
+  background-color: #e04a1f;
+  color: #fff;
+}
+
+/* ----------------- SECTIONS ----------------- */
 section {
   padding: 3rem 2rem;
   max-width: 900px;
@@ -62,6 +106,7 @@ section p {
   margin-bottom: 1rem;
 }
 
+/* Services List */
 .services ul {
   list-style: none;
   padding-left: 1rem;
@@ -80,7 +125,7 @@ section p {
   color: #000;
 }
 
-/* Footer */
+/* ----------------- FOOTER ----------------- */
 footer {
   background-color: #000;
   color: #fff;
@@ -89,65 +134,30 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsive */
+/* ----------------- RESPONSIVE STYLES ----------------- */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
   }
-  .btn {
+
+  .btn,
+  .btn-nav {
     padding: 0.6rem 1rem;
   }
-}
 
-/* --- NAVBAR STYLES --- */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo a {
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn-nav {
-  background-color: #ff5c35;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-nav:hover {
-  background-color: #e04a1f;
-}
-
-/* Responsive navbar */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
   .nav-buttons {
-    width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 0.6rem;
-    margin-top: 1rem;
   }
-  
+
+  .header-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .btn-nav {
-    flex-grow: 1;
+    width: 100%;
     text-align: center;
   }
 }
