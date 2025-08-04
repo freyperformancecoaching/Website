@@ -101,10 +101,12 @@ section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #111;
+  align-items: center;
 }
 
 section p {
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .hayden1 {
