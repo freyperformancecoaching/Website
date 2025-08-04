@@ -205,57 +205,52 @@ footer {
 
 .about-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* This moves content toward the top */
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1100px;
-  margin: 2rem auto;
-}
-
-.about-layout {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start; /* ⬅️ This aligns the text to the top */
+  align-items: flex-start; /* Align content to the top */
   gap: 2rem;
   max-width: 1100px;
-  margin: 2rem auto; /* reduce vertical space */
+  margin: 2rem auto;  /* Adjust vertical spacing */
   padding: 1rem 2rem;
 }
 
 .about-text {
   flex: 1 1 50%;
-  font-size: 1.1rem; /* increase this value to make it bigger */
-  line-height: 1.7;   /* optional: improves readability */
-  margin-top: 0; /* Just in case */
+  font-size: 1.2rem;      /* Slightly bigger text */
+  line-height: 1.7;
+  margin-top: 0;          /* Prevent extra space */
 }
 
 .about-images {
   flex: 1 1 40%;
   display: flex;
-  width: 50%;
-  height: auto;
   flex-direction: column;
   gap: 1rem;
+  align-items: flex-start;
 }
 
 .about-images img {
-  width: 50%;
+  width: 100%;                /* Make images responsive */
+  max-width: 300px;           /* Control size */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Responsive */
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-  .about-layout {
+  .about-section {
     flex-direction: column;
     align-items: center;
   }
 
   .about-text, .about-images {
     flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .about-images img {
+    max-width: 80%;
   }
 }
 
