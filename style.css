@@ -229,7 +229,8 @@ footer {
 }
 
 .about-images img {
-  width: 100%;
+  width: 50%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -243,6 +244,8 @@ footer {
 
   .about-text, .about-images {
     flex: 1 1 100%;
+    font-size: 1.1rem; /* increase this value to make it bigger */
+  line-height: 1.7;   /* optional: improves readability */
   }
 }
 
