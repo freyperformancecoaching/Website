@@ -65,6 +65,17 @@ header p {
   margin: auto;
 }
 
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+
 .plan-card {
   border: 2px solid #000;
   border-radius: 10px;
